@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  /* overflow: hidden; */
+}
+
+/* ===========
+==== FORM
+=========== */
+
+/* .form-banner img {
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+} */
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+    url('../public/assets/images/banner3.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+.form-container-child {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2.5rem;
+  border-radius: 5%;
+}
+
+.form-button {
+  text-align: center;
+}
+
+.form-parent {
+  color: white;
+}
+
+.form-parent input[type="text"],
+.form-parent input[type="email"],
+.form-parent input[type="password"] {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+  outline: none;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.form-parent input[type="text"]:focus,
+.form-parent input[type="email"]:focus,
+.form-parent input[type="password"]:focus {
+  outline: none;
+  border-color: none;
+  box-shadow: none;
+}
+
+/* =============
+====== laoder 
+=============== */
+.loader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #fff;
+  border-bottom-color: #ff3d00;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ======================
+--------- navbar 
+=================== */
+
+.navbar {
+  background-image: linear-gradient(to right, #870000, #190a05);
+  color: white !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.nav-link,
+.navbar-brand {
+  color: white !important;
+}
